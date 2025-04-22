@@ -7,7 +7,7 @@ function App() {
     <>
     
       <header className='header-mercalista-register'>
-       Mercalistaa
+       Mercalista
       </header>
 
       < main className='main-mercalista-register'>

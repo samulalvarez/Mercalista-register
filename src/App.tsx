@@ -5,11 +5,6 @@ function App() {
   
   return (
     <>
-    
-      <header className='header-mercalista-register'>
-       Mercalista
-      </header>
-
       < main className='main-mercalista-register'>
         <section className='section-mercalista-register'>
 

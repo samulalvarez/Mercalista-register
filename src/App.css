@@ -17,6 +17,7 @@
   align-items: center; /* Centra verticalmente */
   min-height: 100vh; /* Asegura que ocupa toda la altura de la ventana */
   margin: 0 auto; /* Centra el contenedor si es necesario */
+  
 }
 
 .form-register {
@@ -105,3 +106,60 @@ input[type="submit"]:hover {
   
 }
 
+@media (max-width: 768px) {
+  .main-mercalista-register {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    height: auto; /* Permite que el contenedor se ajuste al contenido */
+  }
+
+  .section-mercalista-register,
+  .aside-mercalista-register {
+    width: 100%; /* Ambos ocupan el 100% del ancho */
+    min-height: auto; /* Permite que la altura se ajuste al contenido */
+  }
+
+  .form-register {
+    width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+    max-width: none; /* Elimina el límite de ancho máximo */
+    margin: 30px;
+  }
+  .Div-ImgVerduras {
+    display: none;
+  }
+  
+  .Logo-Mercalista{
+    width: 50px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    height: 50px;
+  }
+
+  .Title-CrearCuenta-Mercalista{
+    font-size: 20px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+  .main-mercalista-register {
+    flex-direction: row; /* Mantiene la dirección de fila en pantallas medianas */
+    height:100vh; /* Mantiene la altura original */
+  }
+
+  .section-mercalista-register,
+  .aside-mercalista-register {
+    width: 50%; /* Ambos ocupan el 50% del ancho */
+    min-height: auto; /* Permite que la altura se ajuste al contenido */
+  }
+
+  .form-register {
+    width: 90%; /* Ajusta el ancho para pantallas medianas */
+    max-width: none; /* Elimina el límite de ancho máximo */
+    margin: 30px;
+  }
+
+  .Title-CrearCuenta-Mercalista{
+    font-size: 30px; /* Ajusta el tamaño de la fuente para pantallas medianas */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
